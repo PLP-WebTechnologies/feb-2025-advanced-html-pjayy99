@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML list,images,tables and forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>HTML list</h1>
+    <h2>Ordered list</h2>
+    <ol type="i" start="1">
+        <li>Anatomy</li>
+        <li>Physiology</li>
+        <li>Biochemistry</li>
+        <li>Internal Medicine</li>
+        <li>Pharmacology</li>
+    </ol>
+    <h3>HTML images</h3>
+    <img src="doc.jpg.jpg" alt="girl with stethoscope" height="500" width="500">
+    <h3>HTML tables</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Okelo Mark</td>
+                <td>46.Kasarani</td>
+                <td>0712453212</td>
+                <td>omark@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mary Jane</td>
+                <td>Roysambu</td>
+                <td>0743613212</td>
+                <td>mjanek@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Luka Were</td>
+                <td>55 Nakuru</td>
+                <td>0790532112</td>
+                <td>wereluka@gmail.com</td>   
+            </tr>
+            <tr>
+                <td>Lynn Ayoo</td>
+                <td>656 Limuru</td>
+                <td>0723677902</td>
+                <td>ayoolyn34@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>Mercy Kim</td>
+                <td>123 Eldoret</td>
+                <td>0725342002</td>
+                <td>kimmercy1@gmail.com</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Mobile</td>
+            <td>Emails</td>  
+        </tfoot>
+    </table>
+    <h4>HTMLS FORMS</h4>
+    <form action="" method="">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <!-- Password Field -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        </div>
+        
+        <!-- Date Field -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <!-- Dropdown Field -->
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="rwanda">Rwanda</option>
+            </select>
+        </div>
+        
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        
+         <!-- Checkboxes -->
+         <div class="form-group checkbox-group">
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+
+
+
+
+</body>
+</html>
